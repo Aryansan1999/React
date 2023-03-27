@@ -20,13 +20,13 @@ export default function Textarea(props) {
     const [text, setText] = useState('');
     return (
         <>
-            <div  style={{backgroundColor:props.mode==='dark'?'grey':'white'}}>
-                <h1>Enter Text to analyse</h1>
+            <div style={{ backgroundColor: props.mode === 'dark' ? 'grey' : 'white' }}>
+                <h1>Enter Text to be analysed</h1>
                 <div className="form-group">
-                    <textarea className="form-control" value={text} onChange={handleOnChange}  style={{backgroundColor:props.mode==='dark'?'grey':'white'}} id="exampleFormControlTextarea1" rows="12"></textarea>
+                    <textarea className="form-control" value={text} onChange={handleOnChange} style={{ backgroundColor: props.mode === 'dark' ? 'grey' : 'white' }} id="exampleFormControlTextarea1" rows="12"></textarea>
                 </div>
-                <button className="btn btn-primary" onClick={handelUpClick}>Convert to upper case</button>
-                <button className="btn btn-primary mx-3" onClick={handelLowClick}>Convert to upper case</button>
+                <button className="btn btn-primary" onClick={handelUpClick}>Convert to Upper case</button>
+                <button className="btn btn-primary mx-3" onClick={handelLowClick}>Convert to Lower case</button>
 
 
             </div>

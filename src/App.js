@@ -19,7 +19,7 @@ function App() {
   }
   return (
     <>
-      <Navbar title="SanBUDDY" home="ghar" mode={mode} toggleMode={toggleMode} />
+      <Navbar title="SanBUDDY" home="ADITI " mode={mode} toggleMode={toggleMode} />
       <div className="container my-3 ">
         <Textarea mode={mode}/>
       </div>
